@@ -1,0 +1,44 @@
+{
+  "description": "Wealth Intelligence Copilot default knowledge base",
+  "sec_automatic": {
+    "forms": ["10-K", "10-Q"],
+    "per_form_limit": 1,
+    "tickers": {
+      "AAPL": "Apple — 10-Q / 10-K",
+      "RJF": "Raymond James — 10-K / annual report (SEC)",
+      "JPM": "JPMorgan — 10-K / annual report",
+      "MS": "Morgan Stanley — 10-K",
+      "GS": "Goldman Sachs — 10-K",
+      "SCHW": "Charles Schwab — 10-K / annual report"
+    }
+  },
+  "local_manual": {
+    "flat_layout": {
+      "path": "data/raw/",
+      "note": "Drop PDFs directly in data/raw/ — subfolders optional",
+      "current_files_example": [
+        "jpmc-corp-10k-2025.pdf",
+        "MS_10k1225.pdf",
+        "Raymond James Financial 2025 Annual Report.pdf"
+      ]
+    },
+    "earnings_transcripts": {
+      "form_type": "EARNINGS_TRANSCRIPT",
+      "formats": [".pdf", ".txt", ".md"],
+      "naming": "TICKER_Q1_2025_Earnings.txt",
+      "examples": ["AAPL_FY25Q1_Earnings_Call.txt", "RJF_Q2_2025_Transcript.pdf"]
+    },
+    "investor_presentations": {
+      "form_type": "INVESTOR_PRESENTATION",
+      "formats": [".pdf"],
+      "naming": "TICKER_Investor_Day_2025.pdf",
+      "examples": ["MS_Investor_Presentation_2025.pdf", "GS_Investor_Deck.pdf"]
+    },
+    "annual_reports": {
+      "form_type": "ANNUAL_REPORT",
+      "formats": [".pdf"],
+      "naming": "TICKER_Annual_Report_2024.pdf",
+      "note": "Optional PDFs not available via SEC primary document (e.g. glossy annual report)"
+    }
+  }
+}

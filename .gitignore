@@ -1,0 +1,38 @@
+# Environment
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+frontend/dist/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Data (local filings / PDFs)
+data/raw/
+data/processed/
+*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip
