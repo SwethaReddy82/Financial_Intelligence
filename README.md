@@ -81,4 +81,3 @@ wealth-intelligence-copilot/
 | API | [docs/API.md](docs/API.md) |
 | Database | [docs/DATABASE.md](docs/DATABASE.md) |
 
-**Interview prep:** [docs/GUIDE.md §10](docs/GUIDE.md#10-interview-talking-points)
